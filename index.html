@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- ############################################### -->
-  <!-- NOTE: This email is Not responsive. Please Fix! -->
-  <!-- ############################################### -->
   <head>
     <!-- METADATA -->
     <meta charset="UTF-8" />
@@ -33,8 +30,11 @@
       @media (max-width: 550px) {
         .empty {
           display: none;
+        }
 
-          .delivery-address-table{ [align]}
+        .right-column span,
+        .right-column p {
+          float: right !important;
         }
       }
 
@@ -43,11 +43,23 @@
           padding: 1.75rem 1rem !important;
         }
 
+        .logo {
+          font-size: 1.625rem !important;
+        }
+
+        .message-table h2 {
+          font-size: 1.5rem !important;
+        }
+
         .message-table h2,
         .message-table p,
         .confirmation-wrap,
         .unsubscribe-message {
           padding: 0 1rem !important;
+        }
+
+        .footer-title {
+          font-size: 1.75rem;
         }
       }
     </style>
@@ -75,9 +87,12 @@
                   <tr>
                     <!-- Start of Logo -->
                     <td style="width: 50%" align="left">
-                      <h1 class="logo" style="margin: 0">
-                        <a href="#" style="text-decoration: none; color: white">SEI Themes</a>
-                      </h1>
+                      <a
+                        class="logo"
+                        href="#"
+                        style="text-decoration: none; color: white; font-size: 2rem; font-weight: 700"
+                        >SEI Themes</a
+                      >
                     </td>
                     <!-- End of Logo -->
 
@@ -164,7 +179,7 @@
                 >
                   <tr>
                     <td align="left" style="width: 77.5%">Order Confirmation #</td>
-                    <td align="left" style="width: 22.5%">420117</td>
+                    <td align="right" style="width: 22.5%">420117</td>
                   </tr>
                 </table>
                 <!-- End of "Confirmation" Table -->
@@ -183,15 +198,15 @@
                 >
                   <tr>
                     <td align="left" style="width: 77.5%">Purchased Item (1)</td>
-                    <td align="left" style="width: 22.5%">$100.00</td>
+                    <td align="right" style="width: 22.5%">$100.00</td>
                   </tr>
                   <tr>
                     <td align="left" style="width: 77.5%">Shipping + Handling</td>
-                    <td align="left" style="width: 22.5%">$10.00</td>
+                    <td align="right" style="width: 22.5%">$10.00</td>
                   </tr>
                   <tr>
                     <td align="left" style="width: 77.5%">Sales Tax</td>
-                    <td align="left" style="width: 22.5%">$5.00</td>
+                    <td align="right" style="width: 22.5%">$5.00</td>
                   </tr>
                 </table>
                 <!-- End of "Receipt Info" Table -->
@@ -212,7 +227,7 @@
                 >
                   <tr style="font-weight: 700; text-transform: uppercase">
                     <td align="left" style="width: 77.5%">Total</td>
-                    <td align="left" style="width: 22.5%">$115.00</td>
+                    <td align="right" style="width: 22.5%">$115.00</td>
                   </tr>
                 </table>
                 <!-- End of "Total" Table -->
@@ -230,14 +245,14 @@
                   "
                 >
                   <tr>
-                    <td align="left" style="width: 50%; font-size: 1.05rem">
+                    <td class="left-column" align="left" style="width: 50%; font-size: 1.05rem">
                       <span style="font-weight: 700"> Delivery Address</span>
-                      <p align="left">420 Yolo Street<br />7th Floor<br />Houston, TX 77099</p>
+                      <p>420 Yolo Street<br />7th Floor<br />Houston, TX 77099</p>
                     </td>
 
-                    <td align="right" style="width: 50%; font-size: 1.05rem; vertical-align: top">
+                    <td class="right-column" align="right" style="width: 50%; font-size: 1.05rem; vertical-align: top">
                       <span style="font-weight: 700"> <span class="empty">Estimated</span> Delivery Date</span>
-                      <p align="right">June, 1st 2020</p>
+                      <p>June, 1st 2020</p>
                     </td>
                   </tr>
                 </table>
@@ -353,7 +368,7 @@
                   "
                 >
                   <tr>
-                    <td><h1 style="margin: 0">SEI Themes</h1></td>
+                    <td><h1 class="footer-title" style="margin: 0">SEI Themes</h1></td>
                   </tr>
                   <tr>
                     <td><p style="margin: 0">Simple &middot; Elegant &middot; Innovative</p></td>
